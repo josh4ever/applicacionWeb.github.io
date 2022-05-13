@@ -58,9 +58,9 @@ require([
   };
   // Request feature layers and overwrite renderer 
   const featureLayerBrotes = new FeatureLayer({
-    url: "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/histAviar/FeatureServer?token=0PolNDVtVtaulTqhniknkOoq26oSlS3fAe66giWmHN8yh5RLzGZppwFI40Bm-YtqSVcUoIi0OF4vIc0aX6V9_bpyai03sbV0FhXAF0d8BnD0pQ-Cvi9s4JroBWHzm_iYrlHX66Lg5J-CAKOLnI84SFZenDslvrIHBGwJJdR5ImfvhlXze9B54K3jAHTQLbGJoAoUS6RvN0JOvZM9J-ySoO1kZXuMA1Q50nPEnjCH-E--c8kSwLHXlIOoFeHfWvDDvy39at1d_0gW9n9_njV67LQOqt_ByQ0l-g1trKbK_oI.",
-    
-    
+    portalItem: {
+              id: "7823a0b7da024b60bd21cd963e7ef4a1"
+            },
     copyright: "Influenza Aviar",
     title: "Brotes",
     outFields: ['*'],
