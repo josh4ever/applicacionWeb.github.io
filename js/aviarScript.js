@@ -393,7 +393,7 @@ require([
     const startBrotes = new Date();
     startBrotes.setHours(0, 0, 0, 0);
     startBrotes.setDate(startBrotes.getDate());
-    startBrotes.setDate(startBrotes.getDate() - 455);
+    startBrotes.setDate(startBrotes.getDate() - 8030);
 
     const LastMonday = new Date();
     LastMonday.setHours(0, 0, 0, 0);
@@ -406,7 +406,7 @@ require([
       end: LastMonday
     };
     const endBrotes = new Date(LastMonday);
-    endBrotes.setDate(endBrotes.getDate() - 91);
+    endBrotes.setDate(endBrotes.getDate() - 365);
 
     timeSliderBrotes.values = [endBrotes, LastMonday];
   });
