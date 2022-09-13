@@ -390,10 +390,10 @@ require([
     layerViewBrotes = lv;
 
     // hora de inicio del control deslizante de tiempo
-    const startBrotes = new Date();
-    startBrotes.setHours(0, 0, 0, 0);
-    startBrotes.setDate(startBrotes.getDate());
-    startBrotes.setDate(startBrotes.getDate() - 8030);
+    const startBrotes = new Date(2003, 0, 1);
+    //startBrotes.setHours(0, 0, 0, 0);
+    //startBrotes.setDate(startBrotes.getDate());
+    //startBrotes.setDate(startBrotes.getDate() - 8030);
 
     const LastMonday = new Date();
     LastMonday.setHours(0, 0, 0, 0);
