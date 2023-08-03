@@ -112,7 +112,7 @@ require([
   });
 
   const featureLayerRutas = new FeatureLayer({
-    url: "https://gis.inia.es/server/rest/services/Hosted/rutasUsaFinal/FeatureServer",
+    url: "https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/rutas_UsaFinal/FeatureServer",
     copyright: "CERBU | INIA-CSIC",
     title: "Movements",
     outFields: ["*"],
@@ -178,7 +178,7 @@ require([
   /// DEFINICIÓN DE LOS NUTS
 
   const featureLayerNuts = new FeatureLayer({
-    url: "https://gis.inia.es/server/rest/services/Hosted/nuts_Simplify/FeatureServer",
+    url: "https://services.arcgis.com/8df8p0NlLFEShl0r/ArcGIS/rest/services/nuts_USA/FeatureServer/0",
     copyright: "CERBU | INIA-CSIC",
     title: "Nuts",
     outFields: ['*'],
@@ -223,7 +223,7 @@ require([
     for (let index = 0; index < rutas.features.length; index++) {
       const element = rutas.features[index];
       console.log('element', element)
-      if (element.properties.FIPS_ADMIN_Recov == attributes.fips_admin || element.properties.FIPS_ADMIN_banding == attributes.fips_admin ) {
+      if (element.properties.FIPS_ADMIN_Recov == attributes.FIPS_ADMIN || element.properties.FIPS_ADMIN_banding == attributes.FIPS_ADMIN ) {
         var polyline = {
           type: "polyline", // new Polyline()
           paths: element.geometry.coordinates
